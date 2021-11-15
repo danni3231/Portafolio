@@ -1,0 +1,46 @@
+.landing {
+   height: fit-content;
+   display: flex;
+
+   &__info {
+      width: 60%;
+      padding-right: 180px;
+      padding-left: 160px;
+      background: $gradient;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+
+      p {
+         font-size: 28px;
+         max-width: 540px;
+         margin-bottom: 16px;
+      }
+
+      h1 {
+         font-size: 60px;
+         margin-bottom: 8px;
+      }
+
+      h2 {
+         font-size: 20px;
+      }
+   }
+
+   &__photo {
+      width: 40%;
+      padding-top: 180px;
+      height: fit-content;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      //overflow: hidden;
+
+      img {
+         width: 80%;
+      }
+   }
+}

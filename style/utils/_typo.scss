@@ -1,0 +1,63 @@
+//JetBrains Font
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+//font-weight
+$blackTypo: "wght" 900;
+$bold: "wght" 700;
+$regular: "wght" 400;
+$medium: "wght" 500;
+
+//Typos
+$satoshi: "Satoshi-Variable";
+$satoshiItalic: "Satoshi-VariableItalic";
+$jetBrains: "JetBrains Mono", monospace;
+
+.white {
+   color: $white;
+}
+
+.blue {
+   color: $blue;
+}
+
+.pink {
+   color: $pink;
+}
+
+h1 {
+   color: $black;
+   font-family: $jetBrains;
+   font-size: 40px;
+   font-weight: bold;
+}
+
+h2 {
+   color: $black;
+   font-family: $satoshiItalic;
+   font-size: 16px;
+   font-variation-settings: $regular;
+
+   &.withoutItalic {
+      font-family: $satoshi !important;
+   }
+}
+
+p {
+   color: $black;
+   font-family: $satoshi;
+   font-size: 18px;
+   font-variation-settings: $regular;
+}
+
+a {
+   color: $black;
+   font-family: $satoshi;
+   font-size: 18px;
+   font-variation-settings: $regular;
+
+   text-decoration: none;
+
+   :visited {
+      color: $black;
+   }
+}

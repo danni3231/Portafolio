@@ -1,0 +1,24 @@
+//colors
+$black: #282c34;
+$white: #eceff3;
+$blue: #61afef;
+$pink: #c678dd;
+$gradient: linear-gradient(113.3deg, #535a68 0%, #3c414c 42.54%, #272b33 100%);
+
+* {
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: $white;
+}
+
+@import "./utils/satoshi";
+@import "./utils/typo";
+@import "./components/header";
+@import "./screens/landing";
+@import "./screens/infoCard";
+@import "./screens/gallery";
+
+@import "./screens/footer";

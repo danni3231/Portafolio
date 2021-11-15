@@ -1,0 +1,21 @@
+.infoCard {
+   width: 100%;
+   padding: 40px 80px;
+   background-color: $black;
+
+   display: flex;
+   justify-content: space-between;
+
+   &__text {
+      max-width: 55%;
+
+      h1 {
+         margin-bottom: 20px;
+      }
+   }
+
+   &__element {
+      min-width: 140px;
+      mix-blend-mode: overlay;
+   }
+}
