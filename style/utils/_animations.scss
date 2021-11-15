@@ -1,0 +1,52 @@
+@keyframes nameAnimation {
+   0% {
+      color: $blue;
+   }
+   25% {
+      color: $pink;
+   }
+   50% {
+      color: $red;
+   }
+   90% {
+      color: $green;
+   }
+
+   100% {
+      color: $blue;
+   }
+}
+
+@keyframes topAnimation {
+   0% {
+      transform: translateY(0);
+   }
+   50% {
+      transform: translateY(-10px);
+   }
+   100% {
+      transform: translateY(0);
+   }
+}
+
+.nameAnimation {
+   animation-name: nameAnimation;
+   animation-duration: 12s;
+   animation-timing-function: ease-out;
+   animation-iteration-count: infinite;
+}
+
+.emailAnimation:hover {
+   font-size: 20px;
+   color: darken($color: $pink, $amount: 15);
+}
+
+.btnTopAnimation:hover {
+   img {
+      animation-name: topAnimation;
+      animation-timing-function: linear;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      transform-origin: bottom;
+   }
+}

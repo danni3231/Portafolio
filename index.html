@@ -12,9 +12,8 @@
       <header class="header">
          <img class="header__logo" src="./images/logo.svg" alt="" />
          <nav class="header__nav">
-            <a class="header__nav__link" href="">Home</a>
-            <a class="header__nav__link" href="">About Me</a>
-            <a class="header__nav__link" href="">My Projects</a>
+            <a class="header__nav__link" href="#about">About Me</a>
+            <a class="header__nav__link" href="#myWorks">My Projects</a>
          </nav>
       </header>
 
@@ -22,7 +21,7 @@
          <div class="landing__info">
             <p class="white">Hi there! I'm</p>
 
-            <h1 class="white">Daniel.<span class="blue">Rojas</span></h1>
+            <h1 class="white">Daniel.<span class="blue nameAnimation">Rojas</span></h1>
 
             <h2 class="white">Front-end Developer / UI Designer</h2>
          </div>
@@ -31,7 +30,7 @@
          </div>
       </section>
 
-      <section class="infoCard">
+      <section class="infoCard" id="about">
          <div class="infoCard__text">
             <h1 class="white">About Me</h1>
             <p class="white">
@@ -42,9 +41,34 @@
 
          <img class="infoCard__element" src="./images/element.svg" alt="" />
       </section>
-      <section class="abilities">section</section>
+      <section class="abilities">
+         <section class="abilities__description"></section>
+         <section class="abilities__skills"></section>
+         <section class="abilities__apps">
+            <h1>My skills</h1>
+            <h2>Programming languages</h2>
+            <div class="abilities__apps__container">
+               <img src="./images/appsIcons/html.svg" alt="" />
+               <img src="./images/appsIcons/css.svg" alt="" />
+               <img src="./images/appsIcons/javascript.svg" alt="" />
+               <img src="./images/appsIcons/typeScript.svg" alt="" />
+               <img src="./images/appsIcons/sass.svg" alt="" />
+            </div>
 
-      <section class="gallery">
+            <h2>Frameworks and soft</h2>
+            <div class="abilities__apps__container">
+               <img src="./images/appsIcons/Visual_Studio_Code.svg" alt="" />
+               <img src="./images/appsIcons/react.svg" alt="" />
+               <img src="./images/appsIcons/git.svg" alt="" />
+               <img src="./images/appsIcons/android-studio.svg" alt="" />
+               <img src="./images/appsIcons/figma.svg" alt="" />
+            </div>
+
+            <div class="abilities__apps__container"></div>
+         </section>
+      </section>
+
+      <section class="gallery" id="myWorks">
          <h1 class="gallery__title">See my Projects</h1>
          <section class="gallery__projects">
             <section class="project__preview">
@@ -80,15 +104,15 @@
       </section>
 
       <footer class="footer">
-         <section class="footer__btnTop">
-            <img src="." alt="" />
+         <section class="footer__btnTop btnTopAnimation clickable">
+            <img src="./images/top-ico.svg" alt="" />
             <h2 class="white withoutItalic">Back to top</h2>
          </section>
 
          <section class="footer__data">
             <h1 class="white">Contact Me</h1>
             <p class="white"><b>Tel:</b> (+57) 317-4079982</p>
-            <p class="pink"><b>Email:</b> danni3231@hotmail.com</p>
+            <p class="pink emailAnimation clickable"><b>Email:</b> danni3231@hotmail.com</p>
          </section>
 
          <section class="footer__networks">

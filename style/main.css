@@ -10,6 +10,10 @@ body {
   background-color: #eceff3;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 /**
  * @license
  *
@@ -103,6 +107,7 @@ p {
   color: #282c34;
   font-family: "Satoshi-Variable";
   font-size: 18px;
+  line-height: 20px;
   font-variation-settings: "wght" 400;
 }
 
@@ -116,6 +121,101 @@ a {
 
 a :visited {
   color: #282c34;
+}
+
+@-webkit-keyframes nameAnimation {
+  0% {
+    color: #61afef;
+  }
+  25% {
+    color: #c678dd;
+  }
+  50% {
+    color: #e06c75;
+  }
+  90% {
+    color: #98c379;
+  }
+  100% {
+    color: #61afef;
+  }
+}
+
+@keyframes nameAnimation {
+  0% {
+    color: #61afef;
+  }
+  25% {
+    color: #c678dd;
+  }
+  50% {
+    color: #e06c75;
+  }
+  90% {
+    color: #98c379;
+  }
+  100% {
+    color: #61afef;
+  }
+}
+
+@-webkit-keyframes topAnimation {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes topAnimation {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.nameAnimation {
+  -webkit-animation-name: nameAnimation;
+          animation-name: nameAnimation;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.emailAnimation:hover {
+  font-size: 20px;
+  color: #ac3bce;
+}
+
+.btnTopAnimation:hover img {
+  -webkit-animation-name: topAnimation;
+          animation-name: topAnimation;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 
 .header {
@@ -246,6 +346,57 @@ a :visited {
   mix-blend-mode: overlay;
 }
 
+.abilities {
+  width: 100%;
+  padding: 40px 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.abilities__apps {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.abilities__apps h1 {
+  margin-bottom: 16px;
+}
+
+.abilities__apps__container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 120px;
+}
+
+.abilities__apps__container img {
+  width: 100px;
+  max-height: 100px;
+}
+
 .gallery {
   width: 100%;
   padding: 80px;
@@ -299,6 +450,20 @@ a :visited {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 40px;
+}
+
+.footer__btnTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
 }
 
 .footer__data {

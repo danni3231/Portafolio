@@ -3,6 +3,8 @@ $black: #282c34;
 $white: #eceff3;
 $blue: #61afef;
 $pink: #c678dd;
+$red: #e06c75;
+$green: #98c379;
 $gradient: linear-gradient(113.3deg, #535a68 0%, #3c414c 42.54%, #272b33 100%);
 
 * {
@@ -14,12 +16,17 @@ body {
    background-color: $white;
 }
 
+.clickable {
+   cursor: pointer;
+}
+
 @import "./utils/satoshi";
 @import "./utils/typo";
+@import "./utils/animations";
 @import "./components/header";
 @import "./components/project";
 @import "./screens/landing";
 @import "./screens/infoCard";
+@import "./screens/abilities";
 @import "./screens/gallery";
-
 @import "./screens/footer";
