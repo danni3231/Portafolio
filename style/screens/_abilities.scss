@@ -1,10 +1,17 @@
 .abilities {
    width: 100%;
-   padding: 40px 160px;
+   padding: 80px 160px;
 
    display: flex;
    flex-direction: column;
    align-items: center;
+   gap: 80px;
+
+   &__description {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+   }
 
    &__apps {
       width: fit-content;
@@ -18,10 +25,13 @@
       }
 
       &__container {
-         width: fit-content;
          display: flex;
          align-items: center;
-         gap: 120px;
+         justify-content: center;
+         flex-wrap: wrap;
+         gap: 40px 120px;
+
+         margin-bottom: 40px;
 
          img {
             width: 100px;

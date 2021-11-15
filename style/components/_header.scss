@@ -9,8 +9,29 @@
    position: absolute;
    z-index: 2;
 
+   &--v2 {
+      padding: 0px;
+      padding-right: 80px;
+      position: relative;
+
+      .header {
+         &__logo {
+            &__container {
+               padding: 40px 80px;
+               padding-right: 160px;
+
+               clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+            }
+         }
+      }
+   }
+
    &__logo {
       width: 240px;
+
+      &__container {
+         background: $gradient;
+      }
    }
 
    &__nav {

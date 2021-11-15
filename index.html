@@ -9,8 +9,13 @@
       <title>Daniel Rojas</title>
    </head>
    <body>
-      <header class="header">
-         <img class="header__logo" src="./images/logo.svg" alt="" />
+      <header class="header" id="header">
+         <img
+            class="header__logo clickable"
+            src="./images/logo.svg"
+            alt=""
+            onclick="javascript:location.href='index.html'"
+         />
          <nav class="header__nav">
             <a class="header__nav__link" href="#about">About Me</a>
             <a class="header__nav__link" href="#myWorks">My Projects</a>
@@ -41,9 +46,18 @@
 
          <img class="infoCard__element" src="./images/element.svg" alt="" />
       </section>
+
       <section class="abilities">
-         <section class="abilities__description"></section>
-         <section class="abilities__skills"></section>
+         <section class="abilities__description">
+            <section>
+               <h1>Design</h1>
+               <p></p>
+            </section>
+            <section>
+               <h1>Development</h1>
+               <p></p>
+            </section>
+         </section>
          <section class="abilities__apps">
             <h1>My skills</h1>
             <h2>Programming languages</h2>
@@ -56,47 +70,45 @@
             </div>
 
             <h2>Frameworks and soft</h2>
-            <div class="abilities__apps__container">
+            <div class="abilities__apps__container withoutMargin">
                <img src="./images/appsIcons/Visual_Studio_Code.svg" alt="" />
                <img src="./images/appsIcons/react.svg" alt="" />
                <img src="./images/appsIcons/git.svg" alt="" />
                <img src="./images/appsIcons/android-studio.svg" alt="" />
                <img src="./images/appsIcons/figma.svg" alt="" />
             </div>
-
-            <div class="abilities__apps__container"></div>
          </section>
       </section>
 
       <section class="gallery" id="myWorks">
          <h1 class="gallery__title">See my Projects</h1>
          <section class="gallery__projects">
-            <section class="project__preview">
+            <section class="project__preview clickable" href="project1.html">
+               <img src="./images/personalBranding/preview.png" alt="" />
+               <p>Personal branding</p>
+            </section>
+
+            <section class="project__preview clickable">
+               <img src="./images/G2A/preview.png" alt="" />
+               <p>G2A redesign</p>
+            </section>
+
+            <section class="project__preview clickable">
                <img src="./images/personalBranding/preview.png" alt="" />
                <p>Name project</p>
             </section>
 
-            <section class="project__preview">
+            <section class="project__preview clickable">
                <img src="./images/personalBranding/preview.png" alt="" />
                <p>Name project</p>
             </section>
 
-            <section class="project__preview">
+            <section class="project__preview clickable">
                <img src="./images/personalBranding/preview.png" alt="" />
                <p>Name project</p>
             </section>
 
-            <section class="project__preview">
-               <img src="./images/personalBranding/preview.png" alt="" />
-               <p>Name project</p>
-            </section>
-
-            <section class="project__preview">
-               <img src="./images/personalBranding/preview.png" alt="" />
-               <p>Name project</p>
-            </section>
-
-            <section class="project__preview">
+            <section class="project__preview clickable">
                <img src="./images/personalBranding/preview.png" alt="" />
                <p>Name project</p>
             </section>
@@ -104,7 +116,7 @@
       </section>
 
       <footer class="footer">
-         <section class="footer__btnTop btnTopAnimation clickable">
+         <section class="footer__btnTop btnTopAnimation clickable" onclick="javascript:location.href='#header'">
             <img src="./images/top-ico.svg" alt="" />
             <h2 class="white withoutItalic">Back to top</h2>
          </section>
@@ -122,4 +134,6 @@
          </section>
       </footer>
    </body>
+
+   <script src="./scripts/index.js"></script>
 </html>
