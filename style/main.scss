@@ -6,6 +6,7 @@ $pink: #c678dd;
 $red: #e06c75;
 $green: #98c379;
 $gradient: linear-gradient(113.3deg, #535a68 0%, #3c414c 42.54%, #272b33 100%);
+$gradient2: linear-gradient(113.3deg, #535a68 0%, #3c414c 20%, #272b33 50%);
 
 * {
    margin: 0;
@@ -34,6 +35,7 @@ body {
 
 @import "./utils/satoshi";
 @import "./utils/typo";
+@import "./utils/mediaQuery";
 @import "./utils/animations";
 @import "./components/header";
 @import "./components/project";

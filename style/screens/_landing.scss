@@ -1,11 +1,11 @@
 .landing {
-   height: fit-content;
+   height: 100vh;
    display: flex;
 
    &__info {
       width: 60%;
-      padding-right: 180px;
-      padding-left: 160px;
+      padding-right: 100px;
+      padding-left: 100px;
       background: $gradient;
 
       display: flex;
@@ -15,32 +15,44 @@
       clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
 
       p {
-         font-size: 28px;
-         max-width: 540px;
-         margin-bottom: 16px;
+         font-size: 40px;
+
+         @include xl {
+            font-size: 32px;
+       }
       }
 
       h1 {
-         font-size: 60px;
-         margin-bottom: 8px;
+         font-size: 80px;
+
+         @include xl {
+             font-size: 64px;
+        }
       }
 
       h2 {
-         font-size: 20px;
+         font-size: 24px;
+
+         @include xl {
+            font-size: 16px;
+       }
       }
    }
 
    &__photo {
       width: 40%;
-      padding-top: 180px;
-      height: fit-content;
+      height: 100%;
       display: flex;
       justify-content: flex-end;
       align-items: flex-end;
       //overflow: hidden;
 
       img {
-         width: 80%;
+         height: 80%;
+
+         @include xl {
+            margin-right: -20px;
+       }
       }
    }
 }

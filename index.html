@@ -1,177 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="shortcut icon" href="./images/element.svg" type="image/x-icon" />
-      <link rel="stylesheet" href="./style/main.css" />
-      <title>Daniel Rojas</title>
-   </head>
-   <body>
-      <header class="header" id="header">
-         <img
-            class="header__logo clickable"
-            src="./images/logo.svg"
-            alt=""
-            onclick="javascript:location.href='index.html'"
-         />
-         <nav class="header__nav">
-            <a class="header__nav__link" href="#about">About Me</a>
-            <a class="header__nav__link" href="#myWorks">My Projects</a>
-         </nav>
-      </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/element.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Daniel Rojas</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <img
+        class="header__logo clickable"
+        src="./images/Logo_2.0.svg"
+        alt=""
+        onclick="javascript:location.href='index.html'"
+      />
+      <nav class="header__nav">
+        <a class="header__nav__link" href="#about">About Me</a>
+        <a class="header__nav__link" href="#myWorks">My Projects</a>
+      </nav>
+    </header>
 
-      <section class="landing">
-         <div class="landing__info">
-            <p class="white">Hi there! I'm</p>
+    <section class="landing">
+      <div class="landing__info">
+        <p class="white">Hi there! I'm</p>
 
-            <h1 class="white">Daniel.<span class="blue nameAnimation">Rojas</span></h1>
+        <h1 class="white">
+          Daniel.<span class="blue nameAnimation">Rojas</span>
+        </h1>
 
-            <h2 class="white">Front-end Developer / UI Designer</h2>
-         </div>
-         <div class="landing__photo">
-            <img src="./images/photo.png" alt="" />
-         </div>
-      </section>
+        <h2 class="white">UX/UI Designer / Front-end Developer</h2>
+      </div>
+      <div class="landing__photo">
+        <img src="./images/Foto_2023.png" alt="" />
+      </div>
+    </section>
 
-      <section class="infoCard" id="about">
-         <div class="infoCard__text">
-            <h1 class="white">About Me</h1>
-            <p class="white">
-               Hi there! I'm Daniel Rojas, an interactive media design student from Icesi University who loves
-               programming and interface design.
-            </p>
-         </div>
+    <section class="infoCard" id="about">
+      <div class="infoCard__text">
+        <h1 class="white">About Me</h1>
+        <p class="white">
+          Interactive media designer with an interest in working in positions
+          like UX/UI Designer or Product Designer. Experienced in designing and
+          developing applications, websites, and interactive products using the
+          Human-centered design approach. Proficient in analysis and critical
+          thinking, problem-solving, results-oriented, quick learner, and
+          technology utilization/development.
+        </p>
+      </div>
 
-         <img class="infoCard__element" src="./images/element.svg" alt="" />
-      </section>
+      <div class="infoCard__element__container">
+        <img class="infoCard__element" src="./images/element.svg" alt="" />
+      </div>
+    </section>
 
-      <section class="abilities">
-         <section class="abilities__description">
-            <section class="abilities__description__chunk">
-               <h1>
-                  Design
-                  <img class="abilities__description__ico" src="./images/ui-ico.svg" alt="" />
-               </h1>
-               <p>
-                  Thanks to studying interactive media design, I have extensive knowledge of ui design and design
-                  patterns that allow me to design awesome pages and applications always thinking in the user
-                  experience.
-               </p>
-            </section>
-            <section class="abilities__description__chunk">
-               <h1>
-                  Development
-                  <img
-                     class="abilities__description__ico abilities__description__ico--small"
-                     src="./images/develop-ico.svg"
-                     alt=""
-                  />
-               </h1>
-               <p>
-                  What I love the most and am passionate about in my career is programming and developing those ideas
-                  that are always in my head. Thanks to this I have a great ability to develop page applications and all
-                  the interactive solutions you need.
-               </p>
-            </section>
-         </section>
-
-         <section class="abilities__softSkills">
-            <h1>Soft skills</h1>
-            <div>
-               <p class="clickable">Analysis and critical thinking</p>
-               <p class="clickable">Ability to learn</p>
-               <p class="clickable">Result oriented</p>
-               <p class="clickable">Problem solving</p>
-               <p class="clickable">Use and development of technology</p>
-            </div>
-         </section>
-
-         <section class="abilities__apps">
-            <h1>My abilities</h1>
-            <h2>Programming languages</h2>
-            <div class="abilities__apps__container">
-               <img src="./images/appsIcons/html.svg" alt="" />
-               <img src="./images/appsIcons/css.svg" alt="" />
-               <img src="./images/appsIcons/javascript.svg" alt="" />
-               <img src="./images/appsIcons/typeScript.svg" alt="" />
-               <img src="./images/appsIcons/sass.svg" alt="" />
-            </div>
-
-            <h2>Frameworks and software</h2>
-            <div class="abilities__apps__container withoutMargin">
-               <img src="./images/appsIcons/Visual_Studio_Code.svg" alt="" />
-               <img src="./images/appsIcons/react.svg" alt="" />
-               <img src="./images/appsIcons/git.svg" alt="" />
-               <img src="./images/appsIcons/android-studio.svg" alt="" />
-               <img src="./images/appsIcons/figma.svg" alt="" />
-            </div>
-         </section>
-      </section>
-
-      <section class="gallery" id="myWorks">
-         <h1 class="gallery__title">Look my Projects</h1>
-         <section class="gallery__projects">
-            <section class="project__preview clickable" href="project1.html">
-               <img src="./images/personalBranding/preview.png" alt="" />
-               <p>Personal branding</p>
-            </section>
-
-            <section class="project__preview clickable">
-               <img src="./images/G2A/preview.png" alt="" />
-               <p>G2A redesign</p>
-            </section>
-
-            <section class="project__preview clickable">
-               <img src="./images/bookland/preview.png" alt="" />
-               <p>Bookland</p>
-            </section>
-
-            <section class="project__preview clickable">
-               <img src="./images/Particles/preview.png" alt="" />
-               <p>Particles</p>
-            </section>
-
-            <section class="project__preview clickable">
-               <img src="./images/wellness/preview.png" alt="" />
-               <p>Wellness</p>
-            </section>
-
-            <section class="project__preview clickable">
-               <img src="./images/sigma/preview.png" alt="" />
-               <p>Sigma</p>
-            </section>
-         </section>
-      </section>
-
-      <footer class="footer">
-         <section class="footer__btnTop btnTopAnimation clickable" onclick="javascript:location.href='#header'">
-            <img src="./images/top-ico.svg" alt="" />
-            <h2 class="white withoutItalic">Back to top</h2>
-         </section>
-
-         <section class="footer__data">
-            <h1 class="white">Contact Me</h1>
-            <p class="white"><b>Tel:</b> (+57) 317-4079982</p>
-            <p class="pink emailAnimation clickable"><b>Email:</b> danni3231@hotmail.com</p>
-         </section>
-
-         <section class="footer__networks">
-            <img src="./images/git-ico.svg" alt="" onclick="javascript:location.href='https://github.com/danni3231'" />
+    <section class="abilities">
+      <section class="abilities__description">
+        <section class="abilities__description__chunk">
+          <h1>
+            Design
             <img
-               src="./images/behance_ico.svg"
-               alt=""
-               onclick="javascript:location.href='https://www.behance.net/danni32310e23r'"
+              class="abilities__description__ico"
+              src="./images/ui-ico.svg"
+              alt=""
             />
+          </h1>
+          <p>
+            Thanks to studying interactive media design, I have extensive
+            knowledge of ui design and design patterns that allow me to design
+            awesome pages and applications always thinking in the user
+            experience.
+          </p>
+        </section>
+        <section class="abilities__description__chunk">
+          <h1>
+            Development
             <img
-               src="./images/in-ico.svg"
-               alt=""
-               onclick="javascript:location.href='https://www.linkedin.com/in/daniel-rojas-ab034b1b8/'"
+              class="abilities__description__ico abilities__description__ico--small"
+              src="./images/develop-ico.svg"
+              alt=""
             />
-         </section>
-      </footer>
-   </body>
+          </h1>
+          <p>
+            What I love the most and am passionate about in my career is
+            programming and developing those ideas that are always in my head.
+            Thanks to this I have a great ability to develop page applications
+            and all the interactive solutions you need.
+          </p>
+        </section>
+      </section>
 
-   <script src="./scripts/index.js"></script>
+      <section class="abilities__softSkills">
+        <h1>Skills</h1>
+        <div>
+          <p class="clickable">UX/UI Design</p>
+          <p class="clickable">Prototyping</p>
+          <p class="clickable">Design systems</p>
+          <p class="clickable">User testing</p>
+          <p class="clickable">Figma</p>
+          <p class="clickable">Adobe suite</p>
+          <p class="clickable">Scrum</p>
+          <p class="clickable">Agile</p>
+        </div>
+      </section>
+
+      <section class="abilities__softSkills hidden">
+        <h1>Soft skills</h1>
+        <div>
+          <p class="clickable">Analysis and critical thinking</p>
+          <p class="clickable">Ability to learn</p>
+          <p class="clickable">Result oriented</p>
+          <p class="clickable">Problem solving</p>
+          <p class="clickable">Use and development of technology</p>
+        </div>
+      </section>
+
+      <section class="abilities__apps">
+        <h1>My abilities</h1>
+        <h2>Programming languages</h2>
+        <div class="abilities__apps__container">
+          <img src="./images/appsIcons/html.svg" alt="" />
+          <img src="./images/appsIcons/css.svg" alt="" />
+          <img src="./images/appsIcons/javascript.svg" alt="" />
+          <img src="./images/appsIcons/typeScript.svg" alt="" />
+          <img src="./images/appsIcons/sass.svg" alt="" />
+        </div>
+
+        <h2>Frameworks and software</h2>
+        <div class="abilities__apps__container withoutMargin">
+          <img src="./images/appsIcons/figma.svg" alt="" />
+          <img src="./images/appsIcons/Adobe-ico.svg" alt="" />
+          <img src="./images/appsIcons/Visual_Studio_Code.svg" alt="" />
+          <img src="./images/appsIcons/android-studio.svg" alt="" />
+          <img src="./images/appsIcons/react.svg" alt="" />
+        </div>
+      </section>
+    </section>
+
+    <section class="gallery" id="myWorks">
+      <h1 class="gallery__title">Look my Projects</h1>
+      <section class="gallery__projects">
+        <section class="project__preview clickable" href="project1.html">
+          <img src="./images/Urban/urban_img_portada.png" alt="" />
+          <p>urban</p>
+        </section>
+
+        <section class="project__preview clickable" href="project1.html">
+          <img src="./images/personalBranding/preview.png" alt="" />
+          <p>Personal branding</p>
+        </section>
+
+        <section class="project__preview clickable">
+          <img src="./images/G2A/preview.png" alt="" />
+          <p>G2A redesign</p>
+        </section>
+
+        <section class="project__preview clickable">
+          <img src="./images/bookland/preview.png" alt="" />
+          <p>Bookland</p>
+        </section>
+
+        <section class="project__preview clickable">
+          <img src="./images/Particles/preview.png" alt="" />
+          <p>Particles</p>
+        </section>
+
+        <section class="project__preview clickable">
+          <img src="./images/wellness/preview.png" alt="" />
+          <p>Wellness</p>
+        </section>
+
+        <section class="project__preview clickable">
+          <img src="./images/sigma/preview.png" alt="" />
+          <p>Sigma</p>
+        </section>
+      </section>
+    </section>
+
+    <footer class="footer">
+      <section
+        class="footer__btnTop btnTopAnimation clickable"
+        onclick="javascript:location.href='#header'"
+      >
+        <img src="./images/top-ico.svg" alt="" />
+        <h2 class="white withoutItalic">Back to top</h2>
+      </section>
+
+      <section class="footer__data">
+        <h1 class="white">Contact Me</h1>
+        <p class="white"><b>Tel:</b> (+57) 301 178 6071</p>
+        <p class="pink emailAnimation clickable">
+          <b>Email:</b> daniel.rojas3011@hotmail.com
+        </p>
+      </section>
+
+      <section class="footer__networks">
+        <img
+          src="./images/git-ico.svg"
+          alt=""
+          onclick="javascript:location.href='https://github.com/danni3231'"
+        />
+        <img
+          src="./images/behance_ico.svg"
+          alt=""
+          onclick="javascript:location.href='https://www.behance.net/danni32310e23'"
+        />
+        <img
+          src="./images/in-ico.svg"
+          alt=""
+          onclick="javascript:location.href='https://www.linkedin.com/in/jhoan-daniel-rojas-pabon-ab034b1b8/'"
+        />
+      </section>
+    </footer>
+  </body>
+
+  <script src="./scripts/index.js"></script>
 </html>

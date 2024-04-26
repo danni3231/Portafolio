@@ -1,6 +1,6 @@
 .header {
    width: 100%;
-   padding: 40px 80px;
+   padding: 40px 100px;
 
    display: flex;
    justify-content: space-between;
@@ -11,13 +11,13 @@
 
    &--v2 {
       padding: 0px;
-      padding-right: 80px;
+      padding-right: 100px;
       position: relative;
 
       .header {
          &__logo {
             &__container {
-               padding: 40px 80px;
+               padding: 40px 100px;
                padding-right: 160px;
 
                clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
