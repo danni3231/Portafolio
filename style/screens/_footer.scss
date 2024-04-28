@@ -9,6 +9,14 @@
    justify-content: center;
    gap: 40px;
 
+   @include md{
+      text-align: center;
+      padding: 60px 40px;
+      h1{
+         font-size: 36px;
+      }
+   }
+
    &__btnTop {
       display: flex;
       flex-direction: column;

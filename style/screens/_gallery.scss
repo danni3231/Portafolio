@@ -1,21 +1,27 @@
 .gallery {
-   width: 100%;
-   padding: 80px;
+  width: 100%;
+  padding: 80px;
 
-   display: flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-   &__title {
-      align-self: center;
-      margin-bottom: 48px;
-   }
+  @include md {
+    padding: 80px 40px;
+    gap: 20px;
+  }
 
-   &__projects {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 80px 140px;
-   }
+  &__title {
+    align-self: center;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+
+  &__projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px 140px;
+  }
 }

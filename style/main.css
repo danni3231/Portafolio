@@ -240,6 +240,11 @@ a :visited {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .project {
+    gap: 60px;
+  }
+}
 .project__img {
   width: 100%;
   max-width: 1400px;
@@ -264,6 +269,14 @@ a :visited {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+@media (max-width: 768px) {
+  .project__preview {
+    width: 100%;
+  }
+  .project__preview p {
+    text-align: center;
+  }
 }
 
 .landing {
@@ -344,6 +357,22 @@ a :visited {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .infoCard {
+    padding: 80px 40px;
+  }
+  .infoCard__text {
+    max-width: none;
+    gap: 20px;
+  }
+  .infoCard__text h1,
+  .infoCard__text p {
+    text-align: center;
+  }
+  .infoCard__element__container {
+    display: none;
+  }
+}
 
 .abilities {
   width: 100%;
@@ -354,10 +383,25 @@ a :visited {
   align-items: center;
   gap: 120px;
 }
+@media (max-width: 768px) {
+  .abilities {
+    padding: 80px 40px;
+    gap: 80px;
+  }
+  .abilities h1 {
+    font-size: 36px;
+  }
+}
 .abilities__description {
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .abilities__description {
+    flex-direction: column;
+    gap: 80px;
+  }
 }
 .abilities__description__ico {
   width: 80px;
@@ -369,6 +413,17 @@ a :visited {
 .abilities__description__ico--small {
   width: 65px;
 }
+@media (max-width: 768px) {
+  .abilities__description__ico {
+    position: relative;
+    width: 60px;
+    top: 0%;
+    left: 0px;
+  }
+  .abilities__description__ico--small {
+    width: 50px;
+  }
+}
 .abilities__description__chunk {
   max-width: 40%;
   display: flex;
@@ -379,6 +434,22 @@ a :visited {
 }
 .abilities__description__chunk h1 {
   position: relative;
+}
+@media (max-width: 768px) {
+  .abilities__description__chunk h1 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .abilities__description__chunk {
+    width: 100%;
+    max-width: none;
+    gap: 20px;
+  }
 }
 .abilities__softSkills {
   display: flex;
@@ -429,6 +500,12 @@ a :visited {
   width: 100px;
   max-height: 100px;
 }
+@media (max-width: 768px) {
+  .abilities__apps__container img {
+    width: 80px;
+    max-height: 80px;
+  }
+}
 
 .gallery {
   width: 100%;
@@ -436,9 +513,16 @@ a :visited {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 768px) {
+  .gallery {
+    padding: 80px 40px;
+    gap: 20px;
+  }
+}
 .gallery__title {
   align-self: center;
   margin-bottom: 48px;
+  text-align: center;
 }
 .gallery__projects {
   width: 100%;
@@ -458,6 +542,15 @@ a :visited {
   align-items: center;
   justify-content: center;
   gap: 40px;
+}
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+    padding: 60px 40px;
+  }
+  .footer h1 {
+    font-size: 36px;
+  }
 }
 .footer__btnTop {
   display: flex;

@@ -7,11 +7,25 @@
    flex-direction: column;
    align-items: center;
    gap: 120px;
+   
+   @include md {
+      padding: 80px 40px;
+      gap: 80px;
+
+      h1{
+         font-size: 36px;
+      }
+   }
 
    &__description {
       width: 100%;
       display: flex;
       justify-content: space-around;
+
+      @include md{
+         flex-direction: column;
+         gap: 80px;
+      }
 
       &__ico {
          width: 80px;
@@ -22,6 +36,18 @@
 
          &--small {
             width: 65px;
+         }
+
+         @include md{
+            position: relative;
+
+            width: 60px;
+            top: 0%;
+            left: 0px;
+
+            &--small {
+               width: 50px;
+            }
          }
       }
 
@@ -37,6 +63,20 @@
 
          h1 {
             position: relative;
+
+            @include md{
+               display:  flex;
+               flex-direction: row-reverse;
+               align-items: center;
+               justify-content: center;
+               gap: 20px;
+            }
+         }
+
+         @include md{
+            width: 100%;
+            max-width: none;
+            gap: 20px;
          }
       }
    }
@@ -96,7 +136,14 @@
          img {
             width: 100px;
             max-height: 100px;
+
+            @include md{
+               width: 80px;
+               max-height: 80px;
+            }
          }
+
+
       }
    }
 }
