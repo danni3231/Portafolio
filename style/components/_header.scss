@@ -30,12 +30,51 @@
       width: 240px;
 
       &__container {
-         background: $gradient;
+        // background: $gradient;
       }
    }
 
    &__nav {
       display: flex;
       gap: 40px;
+   }
+
+   &__burgerMenu{
+      display: none;
+      width: 32px;
+   }
+
+   @include md{
+      padding: 40px;
+      background: $gradient;
+      clip-path: polygon(0 0, 100% 0%, 100% 82%, 0 100%);
+
+      &__logo {
+         content:url("../images/LogoSmall.svg");
+         width: 80px;
+      }
+
+      &__nav {
+         display: none;
+      }
+
+      &__burgerMenu{
+         display: flex;
+      }
+
+      &--v2{
+         padding: 40px;
+
+         clip-path: none;
+
+         .header {
+            &__logo {
+               &__container {
+                  padding: 0px;
+                  clip-path: none;
+               }
+            }
+         }
+      }
    }
 }

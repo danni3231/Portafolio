@@ -225,12 +225,41 @@ a :visited {
 .header__logo {
   width: 240px;
 }
-.header__logo__container {
-  background: linear-gradient(113.3deg, #535a68 0%, #3c414c 42.54%, #272b33 100%);
-}
 .header__nav {
   display: flex;
   gap: 40px;
+}
+.header__burgerMenu {
+  display: none;
+  width: 32px;
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 40px;
+    background: linear-gradient(113.3deg, #535a68 0%, #3c414c 42.54%, #272b33 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 82%, 0 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 82%, 0 100%);
+  }
+  .header__logo {
+    content: url("../images/LogoSmall.svg");
+    width: 80px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__burgerMenu {
+    display: flex;
+  }
+  .header--v2 {
+    padding: 40px;
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+  .header--v2 .header__logo__container {
+    padding: 0px;
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
 }
 
 .project {
@@ -242,7 +271,7 @@ a :visited {
 }
 @media (max-width: 768px) {
   .project {
-    gap: 60px;
+    padding: 40px 20px;
   }
 }
 .project__img {
@@ -280,6 +309,7 @@ a :visited {
 }
 
 .landing {
+  width: 100%;
   height: 100vh;
   display: flex;
 }
@@ -333,6 +363,39 @@ a :visited {
     margin-right: -20px;
   }
 }
+@media (max-width: 768px) {
+  .landing {
+    flex-direction: column-reverse;
+  }
+  .landing__info {
+    width: 100%;
+    position: absolute;
+    padding: 40px;
+    padding-top: 60px;
+    text-align: center;
+    -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .landing__info p {
+    font-size: 32px;
+  }
+  .landing__info h1 {
+    font-size: 36px;
+  }
+  .landing__info h2 {
+    font-size: 16px;
+  }
+  .landing__photo {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    overflow: hidden;
+  }
+  .landing__photo img {
+    height: 75%;
+  }
+}
 
 .infoCard {
   width: 100%;
@@ -364,6 +427,7 @@ a :visited {
   .infoCard__text {
     max-width: none;
     gap: 20px;
+    font-size: 36px;
   }
   .infoCard__text h1,
   .infoCard__text p {
@@ -523,6 +587,11 @@ a :visited {
   align-self: center;
   margin-bottom: 48px;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .gallery__title {
+    font-size: 36px;
+  }
 }
 .gallery__projects {
   width: 100%;
